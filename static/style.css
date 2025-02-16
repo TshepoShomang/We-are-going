@@ -1,4 +1,13 @@
-/* static/styles.css */
+:root{
+    --primaryColor: #0275d3;
+    --mainWhite: #ffffff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --testcolor: #282828;
+    --mainTransition: all 0.3s linear;
+}
+
 body {
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
@@ -15,5 +24,137 @@ body {
 
 .erorr{
     color: #ff0000;
+    font-weight: bold;
+}
+
+.navigation{
+    text-align: center;
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+    padding: 20px;
+
+}
+
+
+/*--------------------card----------------------*/
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(to bottom right, #d4a017, #f4c430);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    position: relative;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.validity {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.highlight {
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.brand-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-left, .brand-right {
+    text-align: center;
+}
+
+.brand-left img {
+    height: 40px;
+}
+
+.brand-right h3 {
+    margin: 0;
+    color: #b22222;
+}
+
+.brand-right p {
+    font-size: 14px;
+}
+
+.expiry {
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-number {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/*-------------------end card-------------------*/
+
+.balance-section {
+    width: 90%;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 5%;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#tap-button {
+    background-color: var(--primaryColor);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#tap-button:hover {
+    background-color: #0000ff;
+}
+
+#status {
+    margin-top: 10px;
+    font-size: 16px;
     font-weight: bold;
 }
